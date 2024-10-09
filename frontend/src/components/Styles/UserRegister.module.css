@@ -1,0 +1,97 @@
+/* frontend/src/components/Styles/UserRegister.module.css */
+
+.RegisterContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh; /* Full viewport height */
+    padding: 20px; /* Padding for smaller screens */
+}
+
+.form {
+    background-color: #f9f9f9; /* Light background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Padding inside the form */
+    width: 100%; /* Full width on small screens */
+    max-width: 400px; /* Max width for larger screens */
+}
+
+.formGroup {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 15px; /* Space between form groups */
+}
+ /* profile photo----------------------------- */
+.profilePhotoContainer {
+    display: flex;
+    align-items: center; /* Center icon and input vertically */
+    margin-bottom: 15px; /* Space below the profile photo container */
+}
+
+.profilePhoto {
+    display: none; /* Hide the default file input */
+}
+
+.profilePhotoContainer label {
+    display: flex;
+    align-items: center; /* Center icon and label text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.profilePhotoContainer label .icon {
+    font-size: 24px; /* Size for the upload icon */
+    color: #888; /* Color for the upload icon */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* end profile photo -------------------------*/
+
+.formGroup input {
+    flex: 1; /* Take remaining space */
+    padding: 10px; /* Padding inside input fields */
+    margin-left: 10px; /* Space between icon and input */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for inputs */
+}
+
+.formGroup label {
+    display: flex;
+    align-items: center; /* Center icon and label text */
+}
+
+.icon {
+    font-size: 24px; /* Size for icons */
+    color: #888; /* Color for icons */
+}
+
+.submitButton {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    width: 100%; /* Full width for button */
+}
+
+.submitButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .form {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .formGroup input {
+        font-size: 14px; /* Smaller font size for inputs */
+    }
+
+    .submitButton {
+        font-size: 14px; /* Smaller font size for button */
+    }
+}
