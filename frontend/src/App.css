@@ -2,5 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --main-color: #092266;
+}
+body{
     background-color: #E4F3FD;
+    /* margin-inline: 40px; */
+    /* padding-inline: 40px; */
+    font-family: "Nunito";
+    font-weight: 600;
+    box-sizing: border-box;
+    
 }

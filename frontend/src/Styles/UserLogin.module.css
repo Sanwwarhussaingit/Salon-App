@@ -1,0 +1,114 @@
+
+.container{
+    padding: 60px;
+   
+}
+.userLoginContainer{
+    padding: 10px ;
+    display: flex;
+    overflow: hidden;
+    /* box-shadow: 0px 0px 4px var(--   main-color); */
+    border-radius: 10px;  
+}
+
+.leftImage{
+    width: 50%;
+    max-width: 100%;
+ 
+}
+.barber1{
+    max-width: 80%;
+}
+.userLoginContainer .rightLoginForm{
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #f9f9f9;
+    /* left box shadow */
+    box-shadow: 0px 0px 2px var(--main-color);
+    border-radius: 16px;
+    
+    
+    
+}
+/* login form */
+.rightLoginForm .userLoginForm {
+    /* border: 1px solid var(--main-color); */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.rightLoginForm .inputContainer {
+    margin-bottom: 20px;
+    width: 100%; /* Make it responsive */
+    max-width: 400px; /* Set a max width */
+    height: 50px; /* Increased height for better usability */
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    overflow: hidden;
+  
+}
+.usernameLabel,.passwordLabel{
+    font-size: 14px;
+    position: absolute;
+    top: 10px; 
+    left: 30px; 
+    color: var(--main-color); 
+    background-color: #f9f9f9;
+}
+.passwordLabel {
+  top: 80px;
+}
+
+.inputContainer .username, .inputPassword {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px; /* Added padding for better spacing */
+    font-size: 18px; /* Increased font size for better readability */
+}
+/* forgatePassword */
+
+.forgatePassword {
+    
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+}
+.forgateLink{
+    color: var(--main-color);
+    margin-left: auto;
+}
+
+
+
+.userLoginForm .loginBtn {
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px; /* Increased font size */
+    transition: background-color 0.3s;
+    border: 2px solid transparent;
+    font-weight: 700;
+}
+
+.userLoginForm .loginBtn:hover {
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color: darken(var(--main-color), 10%); /* Darken on hover */
+}

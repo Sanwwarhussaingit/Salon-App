@@ -1,0 +1,234 @@
+
+.header {
+    margin: 0;
+    width: 100%;
+    padding:  15px 20px;
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+   display: flex;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  z-index: 10;
+  background-color: #E4F3FD;
+
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+  }
+ .logo .logoTxt{
+    font-family: "Nunito";
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--main-color);
+    
+   
+   
+
+ }
+ .navbar {
+    display: flex;
+    align-items: center;
+    flex: 1; 
+    background-color: #E4F3FD;
+    
+ }
+  .navbar .linksContainer {
+    display: flex;
+    margin-inline: auto;
+    list-style: none;
+  }
+  
+  .navbar .linksContainer .li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 20px;
+    
+    
+  }
+  .navbar .linksContainer .li .link{
+    position: relative;
+
+  }
+  
+  .navbar .linksContainer .li .link,.logins .li .link   {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  .logins{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+ 
+  }
+  /* .navbar .logins .li .btn:hover, */
+  .navbar .linksContainer .li .link:hover::before {
+    width: 100%;
+  }
+  .navbar .linksContainer .li .link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: var(--main-color);
+    transition: width 0.3s ease;
+  }
+
+
+  .logins .userLoginContainer .userLogin,.logins .li .adminLogin {
+    cursor: pointer;
+    color: #E4F3FD;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0px 3px var(--main-color);
+    background-color: var(--main-color);
+    border: 2px solid transparent;
+    
+  }
+  .logins .userLoginContainer .userLogin:hover{
+
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+  }
+  .logins .li .adminLogin{
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    background-color: unset;
+  }
+  .logins .li .adminLogin:hover{
+    border: 2px solid transparent;
+    color: #E4F3FD;
+    background-color:var(--main-color);
+  }
+
+  /* logo */
+  .logins .userLogo{
+   display: flex;
+   align-items: center;
+  }
+  .userLogo .imgLogo{
+    width: 35px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 2px;
+  
+    margin-right: 5px;
+  }
+  .logoName{
+    padding-left: 5px;
+  }
+
+  
+  
+  .logoutBtn {
+    background-color: rgba(200, 197, 23, 0.711);
+    border: none;
+    color: #0b0b0c;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+ 
+
+
+  .hamburger{
+      font-size: 25px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      display: none;
+  }
+
+  
+  @media (max-width: 1076px) {
+    .header {
+     justify-content: space-between;
+     align-items: center;
+     padding-block: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+    }
+    .navbar{
+        box-shadow: 0 4px 10px 0 gray;
+        display: flex;
+        flex-direction: column-reverse;
+        transition: all 0.5s ease-out;
+        
+       
+        position: absolute;
+        top: 80%;
+        right: 20px;
+        padding: 20px;
+       
+        border-radius: 5px;
+        
+        
+        
+    }
+    
+    .navbar .linksContainer {
+        flex-direction: column;
+       
+     
+
+    }
+  
+    .navbar .linksContainer .li {
+      margin: 10px 0;
+    }
+   
+   
+    .navbar .linksContainer .li {
+        /* font-size: 0.8rem; */
+        margin: 5px 0;
+        
+    }
+    .line{
+        width: 100%;
+        height: 1px;
+        background-color: #333;
+        margin: 8px 0;
+    }
+    .logins{
+       
+        
+        flex-direction: column;
+        align-items: start;
+    
+    }
+
+
+
+    .hamburger{
+        z-index: 1;
+        display: flex;
+    }
+    .visible{
+
+         display: none;
+    }
+
+
+    .logins .userLoginContainer,.logins .adminLoginContainer{
+      
+      margin-inline: auto;
+      padding-block: 5px;
+
+    }
+    .logins .adminLoginContainer {
+
+    }
+  }
+  
